@@ -14,7 +14,7 @@ public class Ejercicio24 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        float prog;
+        float prog;//Voy a usar las abreviaturas de todas las asignaturas.
         float lmsgi;
         float bd;
         float ed;
