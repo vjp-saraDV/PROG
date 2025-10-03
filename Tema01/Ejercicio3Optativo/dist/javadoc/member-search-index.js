@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"ejercicio3optativo","c":"Ejercicio3Optativo","l":"Ejercicio3Optativo()","u":"%3Cinit%3E()"},{"p":"ejercicio3optativo","c":"Ejercicio3Optativo","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

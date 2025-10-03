@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"ejercicio3nombreedadaltura","c":"Ejercicio3NombreEdadAltura","l":"Ejercicio3NombreEdadAltura()","u":"%3Cinit%3E()"},{"p":"ejercicio3nombreedadaltura","c":"Ejercicio3NombreEdadAltura","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
