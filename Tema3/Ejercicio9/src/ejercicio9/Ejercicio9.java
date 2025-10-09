@@ -18,82 +18,61 @@ public class Ejercicio9 {
         /*Escribe un programa en JAVA en el que el usuario introduzca cuatro números enteros y luego el programa los muestre
         *por pantalla ordenados de forma creciente.(de menor a mayor)*/
         int n1, n2, n3, n4;//Declaro las variables número 1, 2, 3 y 4.
-        int aux1, aux2, aux3;//Declaro las variables auxiliares 1, 2 ,3 y 4.
+        int aux;//Declaro la variable auxiliar. Solo se necesita una porque una vez que se asigne un valor a otra variable se puede reutilizar la auxiliar.
 
+        
         Scanner entrada=new Scanner(System.in);
         System.out.println("Por favor, indique un número.");
         n1=entrada.nextInt();
+        
         System.out.println("Por favor, indique otro número.");
         n2=entrada.nextInt();
+        
         System.out.println("Por favor, indique otro número.");
         n3=entrada.nextInt();
+        
         System.out.println("Por favor, indique otro número.");
         n4=entrada.nextInt();
         
-        if (n1<n2){
-            n1=n1;
-        }
-        else if(n1>n2){
-            aux1=n1;
-            n1=n2;
-        }
-        else if(n1>n3){
-            aux1=n1;
-            n1=n3;
-        }
-        else if(n1>n4){
-                aux1=n1;
-                n1=n4;
-        }
-                
         
-       if(n2<n1){
-           aux2=n2;
-           n2=n1;
+        if (n1>n2) {
+            aux=n1;
+            n1=n2;
+            n2=aux;
         }
-       else if(n2>n1){
-           n2=n2;
-       }
-       else if(n2>n3){
-           aux2=n2;
-           n2=n3;
+        if (n1>n3) {
+            aux=n1;
+            n1=n3;
+            n3=aux;
         }
-       else if(n2>n4){
-           aux2=n2;
-           n2=n4;
+        if (n1>n4) {
+            aux=n1;
+            n1=n4;
+            n4=aux;
         }
-       
-       if(n3<n2){
-           aux3=n3;
-           n3=n3;
+        
+        
+        if (n2>n3) {
+            aux=n2;
+            n2=n3;
+            n3=aux;
         }
-       else if(n3>n2){
-           n3=n3;
-       }
-       else if(n3>n4){
-           aux2=n3;
-           n3=n4;
+        if (n2>n4) {
+            aux=n2;
+            n2=n4;
+            n4=aux;
         }
-       else if(n3>n1){
-           aux3=n3;
-           n3=n1;
-       }
-       
-       if(n4<n3){
-           aux4=n4;
-           n3=n3;
+        
+
+        if (n3>n4) {
+            aux=n3;
+            n3=n4;
+            n4=aux;
         }
-       else if(n4>n3){
-           n3=n3;
-       }
-       else if(n4>n1){
-           aux2=n3;
-           n3=n4;
-        }
-       else if(n4>n2){
-           aux3=n3;
-           n3=n1;
-        }
+        /*Solo se necesita comparar n1 con n2, n3 y n4; n2 con n3 y n4; y n3 con n4.
+        *Esto es porque n2 se ha comparado con n1 en el primer apartado, n3 con n2 en el segundo y n4 con n3 en el tercero, etc.*/
+        
+    System.out.println("El orden de los números es " + n1 + ", " + n2 + ", " + n3 + " y " + n4);
     }
     
 }
