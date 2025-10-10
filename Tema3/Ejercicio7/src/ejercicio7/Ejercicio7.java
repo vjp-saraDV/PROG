@@ -48,7 +48,7 @@ public class Ejercicio7 {
             System.out.println("El día " + diasemana + " es laborable.");
         }
         
-        else if (laborable==false) {
+        else {
             System.out.println("El día " + diasemana + " no es laborable.");
         }
     }

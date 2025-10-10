@@ -37,7 +37,7 @@ public class Ejercicio2 {
             System.out.println("La operación que se realizó es el producto de " + n1 + " y " + n2 + " y el resultado es " + producto);
         }
         
-        else if (n1<10) {
+        else {
             suma=n1+n2;
             System.out.println("La operación que se realizó es la suma de " + n1 + " y " + n2 + " y el resultado es " + suma);
         }

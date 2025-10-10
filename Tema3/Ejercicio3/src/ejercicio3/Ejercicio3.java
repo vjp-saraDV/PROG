@@ -19,7 +19,8 @@ public class Ejercicio3 {
         /*Diseña un programa en JAVA que lea tres números e
         *imprima por pantalla el mayor de ellos*/
         
-        int n1, n2, n3;
+        int n1, n2, n3, esMayor;
+        esMayor=0; //Tiene que tener valor para iniciar la variable.
         
         
         Scanner entrada=new Scanner(System.in);
@@ -34,19 +35,19 @@ public class Ejercicio3 {
         
         
         if (n1>n2 && n1>n3) {
-            System.out.println("El número mayor de los introducidos es el " + n1);
-            //Condición: n1 es el mayor de todos.
+            esMayor=n1;
         }
         
         if (n2>n1 && n2>n3) {
-            System.out.println("El número mayor de los introducidos es el " + n2);
-            //Condición: n2 es el mayor de todos.
+            esMayor=n2;
         }
         
         if (n3>n1 && n3>n2) {
+            esMayor=n3;
             System.out.println("El número mayor de los introducidos es el " + n3);
-            //Condición: n3 es el mayor de todos.
         }
+        
+        System.out.println("El número mayor de los introducidos es el " + esMayor);
     }
     
 }
