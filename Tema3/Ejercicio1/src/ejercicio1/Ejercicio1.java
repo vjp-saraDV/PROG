@@ -22,13 +22,13 @@ public class Ejercicio1 {
         System.out.println("Por favor, introduzca un número.");
         numero=entrada.nextInt();
         
-        if (numero<0){
+        if (numero<0){ //El resultado es negativo.
             System.out.println("El número introducido es negativo.");
         }
-        else if(numero==0){
+        else if(numero==0){ //El resultado es 0.
             System.out.println("El número introducido es neutro.");
         }
-        else if (numero>0){
+        else if (numero>0){ //El resultado es positivo.
             System.out.println("El número introducido es positivo.");
         }
     }

@@ -19,14 +19,15 @@ public class Ejercicio7 {
         /* Realiza un programa en JAVA en el que tenga cabida, sin modificar,
         *el siguiente trozo de código:*/
         
-        int diasemana;
-        boolean laborable;
+        int diasemana;//Declaro la variable entera diasemana.
+        boolean laborable=false;//Hay que darle un valor inicial aunque cambie luego, si no la variable está vacía.
         
         Scanner entrada=new Scanner(System.in);
         System.out.println("Introduce un día de la semana (1-7):");
         diasemana=entrada.nextInt();
         
         
+        //El switch no puede cambiar.
         switch (diasemana) {
             case 1:
             case 2:
@@ -39,7 +40,16 @@ public class Ejercicio7 {
             case 7:
                 laborable=false;
                 break;
-        System.out.println("El día " + diasemana + " es laborable.");
+        }
+        
+        
+        //El valor de laborable se ha vuelto a calcular en switch.
+        if (laborable==true) {
+            System.out.println("El día " + diasemana + " es laborable.");
+        }
+        
+        else if (laborable==false) {
+            System.out.println("El día " + diasemana + " no es laborable.");
         }
     }
     

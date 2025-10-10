@@ -30,7 +30,7 @@ public class Ejercicio5 {
         numero=entrada.nextInt();
         
         
-        if (numero%2==par) {
+        if (numero%2==par) { //No se asigna un valor, se calcula, por eso 2 "=".
             System.out.println("El número es par.");
         }
         
