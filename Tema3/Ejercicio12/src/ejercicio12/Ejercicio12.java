@@ -33,16 +33,6 @@ public class Ejercicio12 {
            (i%2==0){ //Si es par, el resto de i/2 siempre será 0. 
         
     }
-        for (i=11; i<133; i++) {
-            if (i%2==0){ //Si es par, el resto de i/2 siempre será 0.
-                j++; /*Cada vez que "i" se repita el bucle, se inrementará la
-                *variable "j".*/
-                System.out.print(i + "-");
-            }
-        }
-        
-        
-        System.out.println("\n La cantidad de números pares impresos han sido: " + j);
     }
     
 }
