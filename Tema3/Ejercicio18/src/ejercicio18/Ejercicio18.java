@@ -19,6 +19,7 @@ public class Ejercicio18 {
         /*Realiza un programa que le pida una contraseña al usuario. Si la
         *escribe bien le dará la enhorabuena, pero si la escribe mal 3 veces le
         *dará un mensaje de error de acceso.*/
+        //Sin String porque no lo hemos dado, así que int.
         String contrasenia, contraseniaRepetida;
         
         
@@ -32,6 +33,8 @@ public class Ejercicio18 {
             contraseniaRepetida=entrada.nextLine();
         }
         while(contraseniaRepetida!=contrasenia);
+        
+        
     }
     
 }

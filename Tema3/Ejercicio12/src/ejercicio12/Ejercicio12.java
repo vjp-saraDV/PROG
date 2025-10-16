@@ -17,22 +17,23 @@ public class Ejercicio12 {
         /*Crea un algoritmo en JAVA que, utilizando un bucle do…while, imprima
         *los números pares que existen entre el número 11 y el número 133.*/
         
-        int i; //Declaro la variable itineración "i".
+        int i=11; //Declaro la variable itineración "i".
         
         
         System.out.println("Los números pares existentes entre el número 11"
-                + "y el 133: "); /*Si se pone antes del bucle solo
+                + "y el 133 son: "); /*Si se pone antes del bucle solo
                 *sale el mensaje 1 vez).*/
         
         
         do{
-           (i=11; i<133; i++);
-           System.out.println(i +);
+           i++;
+           if (i%2==0){
+           System.out.print(i + "-");
+           }
         }
-           while(i=11; i<133; i++);
-           (i%2==0){ //Si es par, el resto de i/2 siempre será 0. 
-        
-    }
+           while(i<=133);
+           { //Si es par, el resto de i/2 siempre será 0.
+        }
     }
     
 }
