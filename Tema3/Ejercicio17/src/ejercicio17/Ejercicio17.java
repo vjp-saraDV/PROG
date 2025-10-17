@@ -6,7 +6,7 @@ package ejercicio17;
 
 /**
  *
- * @author alumno
+ * @author Sara Delgado Velad
  */
 public class Ejercicio17 {
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author alumno
+ * @author Sara Delgado Velad
  */
 public class Ejercicio27 {
 
