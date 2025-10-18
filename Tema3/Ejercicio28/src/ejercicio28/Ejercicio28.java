@@ -20,9 +20,9 @@ public class Ejercicio28 {
         
         
         double numeroAleatorio;
-        numeroAleatorio=(Math.random())*100+1;
+        numeroAleatorio=(Math.random())*100+1; //Da un double aleatorio.
         numeroAleatorio=Math.floor(numeroAleatorio);
-        int numero=(int) numeroAleatorio;
+        int numero=(int) numeroAleatorio;//Conversión de tipo.
         
         
         if (numero%2==0) {
