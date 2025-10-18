@@ -21,7 +21,11 @@ public class Ejercicio25 {
         int i, suma, aux;
         i=17;
         aux=0;
+        
+        
         System.out.println("La suma de los números pares entre el 17 y el 139 son: ");
+        
+        
         for (i=17; i<139; i++){
             if (i/2==0) {
                 suma=i+aux;
