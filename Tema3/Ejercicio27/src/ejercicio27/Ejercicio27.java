@@ -28,7 +28,9 @@ public class Ejercicio27 {
         *volverá a aparecer pidiendo nuevamente que le introduzcas una opción.
         *Nota 2: Controla el caso de división entre 0 mediante la captura
         *de excepciones.*/
-        int a,b,menu,c;
+        
+        
+        int a, b, menu, c;
         /*Declaro las variables a, b, c y menu.*/
         
         
@@ -51,35 +53,35 @@ public class Ejercicio27 {
             
             switch (menu) {//Debe ser short, int, byte o char.
                 case 1: {
-                    c = a + b;
+                    c=a+b;
                     System.out.println("El resultado de la suma de " + a + " y "
                             + b + " es: " + c);
                     break;
                 }
                 case 2: {
-                    c = a - b;
+                    c=a-b;
                     System.out.println("El resultado de la resta de " + a + " y "
                             + b + " es: " + c);
                     break;
                 }
                 case 3: {
-                    c = a * b;
+                    c=a*b;
                     System.out.println("El resultado de la multiplicación de "
                             + a + " y " + b + " es: " + c);
                     break;
                 }
                 case 4: {
-                    if (b > 0) {
-                        c = a / b;
+                    if (b>0) {
+                        c=a/b;
                         System.out.println("El resultado de la división de " + a
                                 + " y " + b + " es: " + c);
-                    } else if (b <= 0) {
+                    } else if (b<=0) {//Control de excepciones.
                         try {
-                            c = a / b;
+                            c=a/b;
                         }
                         catch (ArithmeticException e) {
                             System.out.println("Error: " + e.getMessage());
-                            c = 0;//Asigno el valor 0 para que continue el programa.
+                            c=0;//Asigno el valor 0 para que continue el programa.
                         }
                     }
                     break;
@@ -88,7 +90,7 @@ public class Ejercicio27 {
                     System.exit(0);
                     break;
                 }
-                default: {
+                default: {//Si no cumple ninguno de los otros casos.
                     System.out.println("El número introducido no es válido.");
                     break;
                 }

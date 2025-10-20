@@ -19,9 +19,14 @@ public class Ejercicio28 {
         *si es par o impar.*/
         
         
-        double numeroAleatorio;
-        numeroAleatorio=(Math.random())*100+1; //Da un double aleatorio.
+        double numeroAleatorio;//Declaro la variable double numeroAleatorio.
+        
+        
+        numeroAleatorio=(Math.random())*100+1; /*Da un double aleatorio que no
+        *sea ni 1 ni 100.*/
         numeroAleatorio=Math.floor(numeroAleatorio);
+        
+        
         int numero=(int) numeroAleatorio;//Conversión de tipo.
         
         
