@@ -18,7 +18,7 @@ public class Ejercicio28 {
         *Math.random() ) entre 1 y 100, que lo muestre por pantalla e indique
         *si es par o impar.*/
         
-        
+        //Mejor con int solo.
         double numeroAleatorio;//Declaro la variable double numeroAleatorio.
         
         

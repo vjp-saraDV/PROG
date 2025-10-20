@@ -23,12 +23,14 @@ public class Ejercicio24 {
         *avísale del error y vuélveselo al pedir las veces que hagan falta.
         *• Por último infórmale al usuario del total de números mostrados.*/
 
-        int numeroUsuario, i, suma = 0;//Declaro las variables.
+        int numeroUsuario, i, contador=0;//Declaro las variables.
+        //suma=0; mal hecho.
 
         System.out.println("Introduzca un número mayor que 0.");
         Scanner entrada=new Scanner(System.in);
         numeroUsuario=entrada.nextInt();//El usuario introduce un número.
-
+        //Debería ir en el do.
+        
         if (numeroUsuario<1) {
         
             do {
@@ -45,12 +47,13 @@ public class Ejercicio24 {
         for (i=1; i<numeroUsuario; i++) {
             if (i%3==0) {
                 System.out.print(+i + "-");
-                suma=i/3;//Da el número de múltiplos que hay.
+                //suma=i/3;//Da el número de múltiplos que hay.
+                contador++;
             }
         }
 
         System.out.println("");
-        System.out.println("El total de los múltiplos de 3 es: " + suma);
+        System.out.println("El total de los múltiplos de 3 es: " + contador);
     }
 
 }
